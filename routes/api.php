@@ -32,3 +32,6 @@ Route::middleware('auth:api')->group(function () {
 
 Route::post('/register', 'ApiController@register');
 Route::post('/login', 'ApiController@login');
+Route::get('/login', function(Request $request) {
+    return 'verga';
+});

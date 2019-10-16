@@ -21,7 +21,6 @@ class ApiController extends Controller
         $email = $request->input('email');
         $password = $request->input('password');
         $token = Str::random(60);
-        
         $newUser = new User();
         $newUser->name = $name;
         $newUser->email = $email;
